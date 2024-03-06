@@ -1,0 +1,243 @@
+/* styles.css */
+/*home page*/
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Optional: Set a background color for the body */
+}
+
+.header-container {
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.billing-tab a {
+    text-decoration: none;
+    color: #f5efef;
+    border-radius: 5px;
+    margin-right: 700px;
+    font-size: 1.4em;
+    font-family: 'Arial', sans-serif;
+}
+
+.slogan {
+    font-family: 'Montserrat', sans-serif; 
+    color: #f0e7e8;
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    animation: bounce 1.5s ease infinite alternate; 
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.food-photos-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.food-photo {
+    text-align: center;
+}
+
+.food-photo img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.food-photo:hover img {
+    transform: scale(1.1);
+}
+
+.quote {
+    font-style: italic;
+    color: #817e7e;
+}
+
+.menu {
+    font-size: 2em;
+    color: #ffffff; 
+  font-family: 'Helvetica', sans-serif; /* Font family */
+  text-align: center; /* Align text to left */ 
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.price {
+    color: rgb(0, 128, 0); /* Set the text color to green */
+    font-weight: bold; /* Make the text bold */
+  }
+  
+
+.food-types-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.food-type {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.food-type img {
+    max-width: 80%;
+    max-height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.food-type h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.food-type p {
+    color: #555;
+}
+
+.food-type a {
+    color: #228b22; 
+    text-decoration: none; /* Remove underline by default */
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+  }
+  
+  .food-type a:hover {
+    color: #dc143c; /* Change link color on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .food-type a:visited {
+    color: #1d1024; /* Set color for visited links */
+  }
+  
+  .food-type a:active {
+    color: #ff4500; /* Set color for active links */
+  }
+  
+
+
+.special-deals-container {
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+}
+
+.special-deals-container h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.deal {
+    display: inline-block;
+    width: 350px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.deal:hover {
+    transform: scale(1.03);
+}
+
+.deal:last-child {
+    margin-right: 0;
+}
+
+.deal-details {
+    padding: 10px;
+    text-align: left;
+}
+
+.deal h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #3366cc;
+}
+
+.deal h4 {
+    font-size: 1em;
+    color: #990000;
+}
+
+.deal p {
+    color: #555;
+}
+
+
+footer {
+    color: white;
+    padding: 20px 0;
+    background-color: #333;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+
+}
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #f5efef;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* home page end*/
+
+/* veg page start */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/billing.css">
+  <title>Billing</title>
+  <script src="/js/billing.js"></script>
+</head>
+<body>
+<!--header-->
+<div id="home">
+  <div class="header-container">
+      <h1>Zemba</h1>
+      <div class="billing-tab">
+        <a href="home" style="margin-right: 1010px;">Home</a>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <h2>Billing Details</h2>
+
+    <table id="billingTable">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Item</th>
+          <th style="width: 20%;">Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="billing-row">
+          <td>
+            <select class="categorySelect" onchange="updateItems(this)">
+              <option value="category1">Vegetarian</option>
+              <option value="category2">Seafood</option>
+              <option value="category3">Italian</option>
+              <option value="category4">Dessert</option>
+              <option value="category5">South</option>
+              <option value="category6">Non-veg</option>
+              <option value="category7">Mexican</option>
+              <option value="category8">Sweet</option>
+            </select>
+          </td>
+          <td>
+            <select class="itemSelect"></select>
+          </td>
+          <td><input type="number" class="quantity" value="1" min="1"></td>
+          <td><input type="number" class="price"></td>
+        </tr>
+        <!-- Additional rows will be dynamically added -->
+      </tbody>
+    </table>
+
+    <button class="add-row-button" onclick="addRow()">Add Row</button>
+    <button class="add-row-button" onclick="">Next</button>
+
+  </div>
+
+
+
+</body>
+</html>
